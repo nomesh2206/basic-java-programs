@@ -21,8 +21,16 @@ public class CountViaHashmap {
                 map.put(ch, 1);
             }
         }
+        char k = 0;
+        int max = 0;
         for(Character key : map.keySet()){
+            if(map.get(key) > max) {
+                max = map.get(key);
+                k = key;
+            }
             System.out.println(key +" " + map.get(key));
         }
+        System.out.println("maximum frequency is of character " + k + " = " + map.get(k));
+
     }
 }
