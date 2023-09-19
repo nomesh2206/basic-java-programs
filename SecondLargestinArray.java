@@ -29,7 +29,7 @@ public class SecondLargestinArray {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 55 , 55 , 55 };
+        int arr[] = { 10, 78, 55, 34, 48, 66 };
         int index = secondLargest(arr);
         if (index == 0)
             System.out.println("All elements are equal");
