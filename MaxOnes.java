@@ -5,13 +5,13 @@ public class MaxOnes {
         int i=0;
         while(i<nums.length)
         {
-            int conOnes=0;
+            int countOnes=0;
             while(i< nums.length && nums[i]==1)
             {
-                conOnes++;
+                countOnes++;
                 i++;
             }
-            maximum=Math.max(maximum,conOnes);
+            maximum = (maximum > countOnes) ? maximum : countOnes;
             i++;
         }
         return maximum;
