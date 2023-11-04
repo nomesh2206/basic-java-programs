@@ -21,3 +21,15 @@ class Solution {
                     items.add(list);
                 }
             }
+        }
+        return new ArrayList<>(items);
+    }
+    private Map<Integer, Integer> getMapWithPos(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = nums.length - 1; i >= 0; i--) {
+            if (!map.containsKey(nums[i]))
+                map.put(nums[i], i);
+        }
+        return map;
+    }
+}  
